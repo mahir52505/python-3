@@ -1,0 +1,51 @@
+1️⃣ Lists
+You can create a Series from a Python list.
+
+import pandas as pd
+
+data = [10, 20, 30, 40]
+series = pd.Series(data)
+print(series)
+
+
+2️⃣ NumPy Arrays
+A Series can be created from a NumPy array.
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+series = pd.Series(arr)
+print(series)
+
+
+3️⃣ Dictionaries
+A Series can be created from a dictionary, where keys become the index.
+
+
+data = {"a": 100, "b": 200, "c": 300}
+series = pd.Series(data)
+print(series)
+
+
+4️⃣ Scalar Values (Single Value Repeated)
+You can create a Series with a single repeated value.
+
+series = pd.Series(5, index=[0, 1, 2, 3])
+print(series)
+
+
+5️⃣ Tuples
+A tuple can also be used to create a Series.
+
+data = (10, 20, 30, 40)
+series = pd.Series(data)
+print(series)
+
+
+6️⃣ Pandas Series (Another Series as Input)
+You can create a new Series from an existing pandas Series.
+
+old_series = pd.Series([5, 10, 15])
+new_series = pd.Series(old_series)
+print(new_series)
+Key Takeaways:
